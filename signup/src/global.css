@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --button-m: Roboto;
+
+  /* font sizes */
+  --button-m-size: 16px;
+  --body-xs-size: 12px;
+  --body-s-size: 14px;
+  --body-l-size: 18px;
+  --heading-2-size: 42px;
+  --heading-1-size: 54px;
+  --other-caption-size: 20px;
+
+  /* Colors */
+  --coolgray-10: #f2f4f8;
+  --color-white: #fff;
+  --coolgray-20: #dde1e6;
+  --color-aqua: #66fcf1;
+  --coolgray-90: #21272a;
+  --coolgray-100: #121619;
+  --color-gray-100: rgba(255, 255, 255, 0.25);
+  --default-alert: #da1e28;
+  --primary-60: #0f62fe;
+  --coolgray-60: #697077;
+  --coolgray-30: #c1c7cd;
+  --primary-90: #001d6c;
+
+  /* Gaps */
+  --gap-base: 16px;
+  --gap-5xs: 8px;
+  --gap-9xs: 4px;
+
+  /* Paddings */
+  --padding-5xl: 24px;
+  --padding-base: 16px;
+  --padding-xs: 12px;
+  --padding-5xs: 8px;
+  --padding-12xs-5: 0.5px;
+  --padding-7xs-5: 5.5px;
+
+  /* Border radiuses */
+  --br-xs: 12px;
+}
