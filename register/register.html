@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="register.css" />
+
+    <script>
+      function checkforblank() {
+        if (document.getElementById("fname").value == "") {
+          alert("Please fill all of the input box");
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">Register</div>
+      <form
+        action="register.php"
+        method="post"
+        onsubmit="return checkforblank()"
+      >
+        <div class="form">
+          <div class="inputfield">
+            <label for="firstname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              class="input"
+              name="firstname"
+              placeholder="your first name"
+            />
+          </div>
+          <div class="inputfield">
+            <label for="lastname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              class="input"
+              name="lastname"
+              placeholder="your last name"
+            />
+          </div>
+          <div class="inputfield">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              class="input"
+              name="email"
+              placeholder="your email"
+            />
+          </div>
+          <div class="inputfield">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              class="input"
+              name="password"
+              placeholder="your password"
+            />
+          </div>
+          <div class="inputfield">
+            <label
+              for="redirectLink"
+              onclick="redirectToForget()"
+              class="forgetbutton"
+              >Already Have an Account ?</label
+            >
+            <input type="checkbox" id="redirectLink" style="display: none" />
+
+            <script>
+              function redirectToForget() {
+                window.location.href = "../login/login.html";
+              }
+            </script>
+          </div>
+          <div class="inputfield">
+            <button type="submit" name="register">Register</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

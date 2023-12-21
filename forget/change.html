@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="change.css" />
+    <script>
+      function checkforblank() {
+        if (document.getElementById("password").value == "") {
+          alert("Please fill the input box");
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="title">Change your Password</div>
+      <form action="change.php" method="post" onsubmit="return checkforblank()">
+        <div class="form">
+          <div class="inputfield">
+            <label for="email">Enter Your New Password</label>
+            <input
+              type="password"
+              id="password"
+              class="input"
+              name="password"
+              placeholder="your new password"
+            />
+          </div>
+          <div class="inputfield">
+            <button type="submit" name="change">CHANGE PASSWORD</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

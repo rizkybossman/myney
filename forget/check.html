@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="change.css">
+    <script>
+        function checkforblank(){
+          if (document.getElementById('email').value == ""){
+            alert('Please fill the input box');
+            return false;
+          }
+        }
+      </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">Forgot Your Password ?</div>
+        <form action="check.php" method="post" onsubmit="return checkforblank()">
+            <div class="form">
+                <div class="inputfield">
+                    <label for="email">Enter Your Email Address</label>
+                    <input type="email" id="email" class="input" name="email" placeholder="your email">
+                </div>   
+                <div class="inputfield">
+                    <button type="submit" name="check">CHECK</button>
+                </div>
+            </div>
+        </form>
+    </div>	
+</body>
+</html>
